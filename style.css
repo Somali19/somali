@@ -1,0 +1,568 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    
+    text-align: center;
+    
+  }
+
+.resp {
+  overflow: hidden;
+}
+nav {
+  
+    padding: 28px;
+    text-align: center;
+   
+    color: rgb(52, 199, 155);
+    z-index: 10;
+   
+  }
+  .navbar .active {
+    border-bottom: 3px solid rgb(52, 199, 155);
+    width: 50%;
+  }
+  
+  nav a {
+    
+    transition: 0.3s ease;
+    color: rgb(255, 255, 255);
+    
+    text-decoration: none;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    padding: 25px 0;
+    margin: 0 5px;
+    font-size: 17px;
+  }
+ 
+   nav a.s {
+    color: black;
+  }
+
+  
+
+  nav a:hover {
+    transform: translateY(-5px); 
+    border-bottom: 3px solid rgb(52, 199, 155);
+    width: 50%;
+    color:  rgb(52, 199, 155);
+    
+  }
+
+  
+  .nav-item > .nav-link {
+    font-size: 22px; 
+    z-index: 50;
+  }
+  
+  
+ nav.navbar-default {
+     background-color: transparent;
+     border-color: #080808;
+     opacity: 1;
+ }
+ 
+ nav.navbar.solid {
+  background-color:white;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+ 
+  
+ }
+ 
+
+
+
+.scrolled-nav {
+  height: 100px !important;
+  line-height: 60px !important;
+}
+
+.counter {
+  width: 20px;
+  height: 20px;
+  background: black;
+  color: #fff;
+  position: fixed;
+  top: 120px;
+  right: 0;
+}
+
+ 
+ 
+
+
+@media screen and (max-width: 250px) {
+    nav a:hover  {
+        border-bottom: transparent;
+    }
+}
+@media screen and (max-width: 992px) {
+    nav a:hover  {
+        border-bottom: transparent;
+    }
+}
+
+#home {
+    position: relative;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    min-height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) , rgba(4, 5, 0, 0.45)) , url("https://cdn.pixabay.com/photo/2017/08/10/08/47/code-2620118_960_720.jpg");
+   
+}
+#about {
+  position: relative;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  min-height: auto;
+  
+  
+  }
+
+#portfolio {
+    position: relative;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    min-height: auto;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75) , rgba(4, 5, 0, 0.6)) , url("https://cdn.pixabay.com/photo/2017/03/08/17/40/white-2127384_960_720.png");
+
+    }
+
+#contact {
+    position: relative;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    min-height: 1150px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) , rgba(4, 5, 0, 0.45)) , url("https://cdn.pixabay.com/photo/2017/08/10/08/47/code-2620118_960_720.jpg");
+  }
+
+
+    .typewrite {
+        color:rgb(73, 238, 123);
+        font-size: 32px;
+        margin-top: 20px;
+        z-index: 50;
+    }
+
+    .textShineBlack {
+        background: linear-gradient(to right, rgb(2, 252, 139) 20%, #14cf88 30%, #52f583 70%, rgb(15, 165, 82) 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        
+        font-size: 50px;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        background-size: 200% auto;
+        animation: textShine 7s ease-in-out infinite alternate;
+      }
+      
+      @keyframes textShine {
+        to {
+          background-position: 200%;
+        }
+      }
+    
+
+
+      .fab {
+        padding: 20px;
+        font-size: 20px;
+        width: 54px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      
+      .fab:hover {
+          opacity: 0.9;
+          transform: translateY(5px);
+          color: white;
+      }
+      
+    
+      
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+      
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      
+   
+      
+      .fa-instagram {
+        background: #bd2671;
+        color: white;
+      }
+
+      .animate__animated.animate__bounce {
+        --animate-duration: 3s;
+      }
+      .svg-img > svg{
+          z-index: 20;
+          height: 500px;
+         background: transparent;
+         opacity: 1;
+         width: 100%;
+        
+      }
+    
+      .svg-img  #girl {
+        animation: bounceg 1s infinite ease-out alternate;
+      }
+
+      @keyframes bounceg {
+          0% {
+              transform: translateX(20px);
+          }
+          100% {
+              transform: translateX(-50px);
+          }
+      }
+      .svg-img  #laptop {
+        animation: bouncel 1s infinite ease-out alternate;
+      }
+
+      @keyframes bouncel {
+          0% {
+              transform: translateX(20px);
+          }
+          100% {
+              transform: translateX(-35px);
+          }
+      }
+    
+.btn:hover {
+    background-color: rgb(52, 199, 155) !important;
+    cursor: pointer;
+    
+  } 
+
+  #tools {
+    background-color: rgb(52, 199, 155);
+     border-radius: 20px;
+     
+  }
+  .card {
+    margin-bottom: 40px;
+    box-shadow: 7px 7px 5px 0px rgba(3,3,3,0.69);
+-webkit-box-shadow: 7px 7px 5px 0px rgba(3,3,3,0.69);
+-moz-box-shadow: 7px 7px 5px 0px rgba(3,3,3,0.69);
+
+  }
+
+  .card:hover{
+  background-color: rgba(170, 172, 170, 0.308);
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    box-shadow: 15px 12px 5px 5px rgba(3,3,3,0.84);
+-webkit-box-shadow: 15px 12px 5px 5px rgba(3,3,3,0.84);
+-moz-box-shadow: 15px 12px 5px 5px rgba(3,3,3,0.84);
+
+    
+  }
+
+  .card-img-top {
+    height: 250px;
+    width:100%;
+    max-width:auto;
+    transition: transform .2s;
+    
+  }
+  .card-img-top:hover {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2);
+  margin-bottom: 12px;
+  }
+  .inner:hover {
+    transform: translateY(6px);
+  }
+
+ 
+ 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .8s ease;
+  background-color: rgb(52, 199, 155);
+  overflow: hidden;
+  
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+
+
+}
+.card:hover .overlay {
+  
+  height: 100%;
+  opacity: 0.85;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  
+
+  text-align: center;
+}
+
+.contain {
+  position: relative;
+  
+}
+#outer
+{
+    width:100%;
+    text-align: center;
+   
+}
+.inner
+{
+    display: inline-block;
+    padding-top: 8px;
+}
+
+         .btn-grad {background-image: linear-gradient(to right, #16A085 0%, #569701  51%, #16A085  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            
+            border-radius: 10px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: transparent;
+            margin-right: 40px;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+          }
+         
+
+          .btn-grad1 {background-image: linear-gradient(to right, #569701  0%,  #16A085  51%, #569701  100%)}
+          .btn-grad1 {
+             margin: 10px;
+             padding: 15px 45px;
+             text-align: center;
+             text-transform: uppercase;
+             transition: 0.5s;
+             background-size: 200% auto;
+             color: white;            
+             
+             display: inline-block;
+             margin-left: auto;
+             margin-right: auto;
+             text-align: center;
+             border: transparent;
+           }
+ 
+           .btn-grad1:hover {
+             background-position: right center; /* change the direction of the change here */
+             color: #fff;
+             text-decoration: none;
+          
+             border-radius: 10px;
+            
+           }
+
+.image {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:  rgb(52, 199, 155);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.contain:hover .overlay1 {
+  bottom: 0;
+  height: 100%;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.contain2 {
+  position: relative;
+  
+}
+
+
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(52, 199, 155);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.contain2:hover .overlay2 {
+  height: 100%;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+.btn-grad3 {background-image: linear-gradient(to right, #77A1D3 0%, #24d491  51%, #77A1D3  100%)}
+.btn-grad3 {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+             border: transparent;
+             margin-top: 30px;
+ }
+
+ .btn-grad3:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   border: transparent;
+   outline: none;
+ }
+
+ .gm-style-iw {
+  overflow: hidden !important; 
+  line-height: 1.35;
+  white-space: nowrap;
+}
