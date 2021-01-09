@@ -29,8 +29,7 @@ nav {
     color: rgb(255, 255, 255);
     
     text-decoration: none;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
+  
     padding: 25px 0;
     margin: 0 5px;
     font-size: 17px;
@@ -40,13 +39,12 @@ nav {
     color: black;
   }
 
-  
 
   nav a:hover {
     transform: translateY(-5px); 
     border-bottom: 3px solid rgb(52, 199, 155);
     width: 50%;
-    color:  rgb(52, 199, 155);
+    color: rgb(52, 199, 155);
     
   }
 
@@ -92,18 +90,6 @@ nav {
  
  
 
-
-@media screen and (max-width: 250px) {
-    nav a:hover  {
-        border-bottom: transparent;
-    }
-}
-@media screen and (max-width: 992px) {
-    nav a:hover  {
-        border-bottom: transparent;
-    }
-}
-
 #home {
     position: relative;
     
@@ -113,7 +99,7 @@ nav {
     background-size: cover;
     width: 100%;
 
-    min-height: auto;
+    min-height: 800px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3) , rgba(4, 5, 0, 0.45)) , url("https://cdn.pixabay.com/photo/2017/08/10/08/47/code-2620118_960_720.jpg");
    
 }
@@ -279,6 +265,9 @@ nav {
     box-shadow: 7px 7px 5px 0px rgba(3,3,3,0.69);
 -webkit-box-shadow: 7px 7px 5px 0px rgba(3,3,3,0.69);
 -moz-box-shadow: 7px 7px 5px 0px rgba(3,3,3,0.69);
+max-width: 420px;
+margin-left: auto;
+margin-right: auto;
 
   }
 
@@ -289,7 +278,11 @@ nav {
     box-shadow: 15px 12px 5px 5px rgba(3,3,3,0.84);
 -webkit-box-shadow: 15px 12px 5px 5px rgba(3,3,3,0.84);
 -moz-box-shadow: 15px 12px 5px 5px rgba(3,3,3,0.84);
-
+transform: scale(1.1);
+    -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1);
+  margin-bottom: 28px;
+  transition: transform .2s;
     
   }
 
@@ -297,15 +290,10 @@ nav {
     height: 250px;
     width:100%;
     max-width:auto;
-    transition: transform .2s;
+   
     
   }
-  .card-img-top:hover {
-    transform: scale(1.2);
-    -ms-transform: scale(1.2); 
-  -webkit-transform: scale(1.2);
-  margin-bottom: 12px;
-  }
+ 
   .inner:hover {
     transform: translateY(6px);
   }
@@ -561,8 +549,49 @@ nav {
    outline: none;
  }
 
- .gm-style-iw {
-  overflow: hidden !important; 
-  line-height: 1.35;
-  white-space: nowrap;
+ 
+@media screen and (max-width: 200px) {
+  .navbar .active {
+    border-bottom: 2px solid rgb(52, 199, 155);
+    width: 20px;
+  }
 }
+
+
+@media screen and (max-width: 992px) {
+  .navbar .active {
+    border-bottom: 2px solid rgb(52, 199, 155);
+    width: 40px;
+    
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 200px) {
+  
+nav a:hover {
+  transform: none; 
+  border-bottom: transparent;
+}
+}
+
+
+@media screen and (max-width: 992px) {
+ 
+nav a:hover {
+  transform: none; 
+  border-bottom: transparent;
+  
+  
+}
+}
+
+
+
+
+
+
