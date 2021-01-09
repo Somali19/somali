@@ -63,12 +63,13 @@ $(document).ready(function() {
         $('.navbar').addClass('solid');
         $('.navbar a').addClass('s');
         $('.nav').removeClass('active');
-
+        
         
     } else {
         $('.navbar').removeClass('solid');
         $('.navbar a').removeClass('s');
-        $('.nav').addClass('active');
+        $('.navbar').addClass('active');
+        
         
     }
   });
@@ -88,6 +89,8 @@ var scrollItems = menuItems.map(function () {
 });
 
 //Navbar active change 
+
+
 
 
 
