@@ -591,6 +591,23 @@ nav a:hover {
 }
 
 
+@media screen and (max-width: 200px) {
+ 
+  nav a {
+    text-align: left;
+    
+    
+  }
+  }
+  
+@media screen and (max-width: 992px) {
+ 
+  nav a {
+    text-align: left;
+    
+    
+  }
+  }
 
 
 
